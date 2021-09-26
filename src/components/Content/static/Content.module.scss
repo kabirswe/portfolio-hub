@@ -1,0 +1,17 @@
+.ContentSection {
+    width: 320px;
+    height: 320px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #2a2a35;
+    overflow-y: auto;
+}
+.Title {
+    font-size: 22px;
+    font-family: "Helvetica Neue";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 26px;  
+}

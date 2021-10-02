@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './static/TopHeader.scss';
 
-const TopHeader = () => {
+export const TopHeader = () => {
     return (
         <div className="top-header-wrapper">
             <Container>

@@ -3,7 +3,6 @@ import { Content } from '../Content/Content';
 import { Footer } from '../Footer/Footer';
 import { Header } from '../Header/Header';
 import styles from './static/RadioWidget.module.scss';
-
 export interface RadioWidgetProps {
     title: string;
   }

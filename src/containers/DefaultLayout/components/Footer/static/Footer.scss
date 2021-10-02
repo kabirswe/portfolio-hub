@@ -1,0 +1,132 @@
+// @import '../../../scss/variables';
+// @import '../../../scss/mixins';
+
+.main-footer {
+	position: relative;
+	margin-top: 80px;
+	background: #09090a;
+	overflow: hidden;
+	.footer-bg {
+		position: absolute;
+		top: 50%;
+		bottom: 0;
+		width: 800px;
+		opacity: 0.85;
+		height: 100%;
+		object-fit: cover;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin-top: 10px;
+	}
+	.content-wrapper {
+		position: relative;
+		// margin-top: 180px;
+		z-index: 10;
+		margin-top: 100px;
+		.contact-block {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.contact {
+				p {
+					font-family: 'Noto Sans', sans-serif;
+					color: #ededed;
+					font-size: 24px;
+					text-transform: capitalize;
+					font-weight: 700;
+				}
+				img {
+					width: 45px;
+					opacity: .5;
+				}
+			}
+			.social-icons {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				margin-top: -45px;
+				p {
+					font-size: 10px;
+					color: #cececd;
+				}
+				a {
+					img {
+						height: 14px;
+						margin-left: 20px;
+					}
+					&:nth-child(4) {
+						img {
+							height: 20px;
+						}
+					}
+				}
+			}
+		}
+		.address-block {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 40px;
+			p {
+				color: #d4d4d4;
+				font-size: 14px;
+			}
+		}
+	}
+	.copy-right-wrapper {
+		border-top: 1px solid #bf5a62;
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+		position: relative;
+		z-index: 10;
+		p {
+			padding: 20px 0;
+			color: #d4d4d4;
+			font-size: 10px;
+		}
+	}
+}
+
+//Responsive design
+/*
+  ##Device = I-pad (portrait)
+*/
+
+@media only screen and (min-width: 601px) and (max-width: 1279px) {
+
+}
+
+/* 
+##Device = Smart Phone (portrait)
+##Screen = B/w 321px to 600px
+*/
+@media only screen and (max-width: 600px) {
+	.main-footer {
+		margin-top: 40px;
+		.footer-bg {
+			opacity: .40;
+		}
+		.content-wrapper {
+			margin-top: 40px;
+			.contact-block {
+				flex-direction: column;
+				.social-icons {
+					margin-top: 20px;
+				}
+			}
+			.address-block {
+				flex-direction: column;
+				align-items: center;
+				p {
+					font-size: 12px;
+				}
+			}
+		}
+		.copy-right-wrapper {
+			margin-top: 10px;
+			p {
+				padding: 8px 0;
+			}
+		}
+	}
+}

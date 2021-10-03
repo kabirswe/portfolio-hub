@@ -1,18 +1,27 @@
 .top-header-wrapper {
 	width: 100%;
-	background-color: #fdd02c;
-	display: flex;
+	background-color: #2b304c;
 	.top-header-block {
-		height: 30px;
+		height: 35px;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-between;
 		align-items: center;
 		p {
 			font-size: 12px;
-			color: #020202;
-			&:last-child {
-				margin-left: 26px;
-			}
+			color: #fff;
+			margin-left: 20px;
+			padding-left: 20px;
+			border-left: 1px solid #fff;
+			&:first-child {
+				border-left: none;
+		   }
+		}
+		
+	}
+	.info-blog {
+		display: flex;
+		img {
+			margin-right: 10px;
 		}
 	}
 }

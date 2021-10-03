@@ -19,7 +19,7 @@ export const DefaultLayout = (props) => {
 	<>
 		<div className={fixNavbar ? 'default-layout mt-100' : 'default-layout'}>
 			<TopHeader />
-			<Navbar fixNavbar={fixNavbar} />
+			{/* <Navbar fixNavbar={fixNavbar} /> */}
 			<div className="main-container">
 				{props.children}
 			</div>

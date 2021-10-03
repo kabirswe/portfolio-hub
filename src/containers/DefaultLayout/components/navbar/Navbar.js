@@ -5,8 +5,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 // import { useDispatch, useSelector } from 'react-redux';
 import Logo from "./static/image/logo.svg";
 import SpNav from "./static/image/sp-menu.svg";
-const Navbar = () => {
-	
+import "./static/Navbar.scss"
+const Navbar = () => {	
     // let cartData = useSelector(state => state.CartSlice.list);
   return (
 	<div className="navbar-wrapper">
@@ -15,33 +15,24 @@ const Navbar = () => {
 				<Col md={12}>
 					<div className="main-navbar">
 						<div className="nav-list-block">
-							<Link to="/" className="logo-block">
+							<a href="/" className="logo-block">
 								<img src={Logo} alt="" />
-							</Link>
-							{/* {Category.map(({name, slug}) => (
-								<Link key={slug} to={`/category/${slug}`} className="item">
-									{name}
-								</Link>
-							))} */}
-								{/* <Link to="/category/chicken" className="item">
-									Antibiotic Free Chicken
-								</Link>
-								<Link to="/category/beef" className="item">
-									Beef
-								</Link>
-								<Link to="/category/goat" className="item">
-									Goat
-								</Link>
-								<Link to="/category/lamb" className="item">
-									Lamb
-								</Link>
-								<Link to="/category/veal" className="item">
-									Veal
-								</Link>
-								<Link to="/category/grocery" className="item">
-									Grocery
-								</Link> */}
-							
+							</a>															
+						</div>
+						<div className="nav-menu">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Page</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+						<div clasName="search-icon">
+							<img src="#" alt="card-img"/>
+							<img src="#" alt="serch-img"/>
+							<img src="#" alt="serch-img"/>
 						</div>
 					</div>
 				</Col>

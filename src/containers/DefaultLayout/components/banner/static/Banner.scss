@@ -1,0 +1,43 @@
+.banner-wrapper {
+	background: url("./image/bg.jpg")no-repeat center center / cover;
+	padding: 55px 0px 183px 0px;
+    .header-area {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-basis: 70%;
+        h1 {
+            margin-left: 0;
+        }
+    }
+    .header-title {
+        color: #fff;
+        flex-basis: 57%;
+        h1 {
+            font-weight: 700;
+            font-size: 50px;
+        }
+        span {
+            font-weight: 400;
+        }
+    }
+    .header-counter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .counter {
+            margin-left: 30px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #fff;
+            h1 {
+                color: red;
+                font-size: 60px;
+                font-weight: 500;
+            }
+            p {
+                color: #fff;
+            }
+        }
+}
+

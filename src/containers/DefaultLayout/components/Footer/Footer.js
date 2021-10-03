@@ -40,6 +40,17 @@ const Footer = () => {
             <p>
               +8880000114558
             </p>
+            <div className="social-icons">
+              <a>
+                <img src={Facebook}/>
+              </a>
+              <a>
+                <img src={Twitter}/>
+              </a>
+              <a>
+                <img src={Linkedin}/>
+              </a>
+            </div>
           </div>
           <div className="contact-section">
             <h3>

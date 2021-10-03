@@ -7,11 +7,28 @@
 	background: #090d1f;
 	overflow: hidden;
 	color: #fff;
+	padding: 50px 150px 50px 150px;
+	
 	.content-wrapper{
 		display: flex;
 		justify-content: space-between;
+		// align-items: center;
+		
+		
+	}
+	.copyright-section{
+		display: flex;
+	
+		justify-content: start;
+		border-top: 1px solid white;
 		align-items: center;
-		padding: 50px;
+	
+		
+		
+	}
+	.company-section{
+		display: flex;
+		flex-direction: column;
 	}
 	
 }

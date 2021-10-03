@@ -8,7 +8,10 @@ import Twitter from "./static/image/twitter.svg";
 import Linkedin from "./static/image/linkedin.svg";
 import FooterBg from "./static/image/footer-bg.jpg";
 import "./static/Footer.scss";
+import BrandLogo from './static/image/brandLogo.png'
 
+
+const usefulLinks=["Group Profiles","Vision & Values","History","Awards", "Leadership", "CSR", "Sustainability", "Careers", "Media"]
 const Footer = () => {
   return (
     <div className="main-footer">
@@ -20,10 +23,8 @@ const Footer = () => {
       <Container>
        <div className="content-wrapper">
           <div className="company-section">
-            <h2>
-              The Pascal
-            </h2>
-            <input/>
+            <img src={BrandLogo}/>
+            <input type="text" placeholder="email"/>
             <p>
               Stay Always in touch.! Subscribe our newsletter
             </p>
@@ -40,6 +41,17 @@ const Footer = () => {
               +8880000114558
             </p>
           </div>
+          <div className="contact-section">
+            <h3>
+              Useful Links
+            </h3>
+            {usefulLinks.map((index) => (
+                <p>
+                  {index}
+                </p>
+            ))}
+            
+          </div>
           <div className="latest-news">
             <h3>Latest News</h3>
             <p> Best 15 Secrets of digital Transformation</p>
@@ -47,9 +59,14 @@ const Footer = () => {
             <p> Best 15 Secrets of digital Transformation</p>
             <p> November 22 </p>
           </div>
-
        </div>
+       <div className="copyright-section">
+            <p>
+             Copyright &copy; 2020 the Pascal by <a> WebGeniusLab. </a> All rights reserved
+            </p>
+          </div>
       </Container>
+      
     </div>
   );
 };

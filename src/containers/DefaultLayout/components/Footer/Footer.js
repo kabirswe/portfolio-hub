@@ -1,19 +1,19 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import { Container } from 'react-bootstrap';
 import Facebook from './static/image/facebook.svg';
 import Google from './static/image/google-plus.svg';
 import Twitter from './static/image/twitter.svg';
 import Linkedin from './static/image/linkedin.svg';
-import FooterBg from './static/image/footer-bg.jpg';
+import asad from './static/image/footer-bg.jpg';
 import './static/Footer.scss';
 
 const Footer = () => {
   return (
 	<div className="main-footer">
 		<img
-			src={FooterBg}
+			src={asad}
 			className="footer-bg"
 			alt="top right bg"
 		/>
@@ -26,7 +26,7 @@ const Footer = () => {
 					</div>
 					<div className="social-icons">
 						<p>Follow Us</p>
-						<Link to=""><img src={Facebook} alt="social icon" /></Link>
+						{/* <Link to=""><img src={Facebook} alt="social icon" /></Link> */}
 					</div>
 				</div>
 				<div className="address-block">

@@ -6,7 +6,7 @@ import Facebook from './static/image/facebook.svg';
 import Linkedin from './static/image/linkedin.svg';
 import './static/TopHeader.scss';
 
-const TopHeader = () => {
+export const TopHeader = () => {
     return (
         <div className="top-header-wrapper">
             <Container>

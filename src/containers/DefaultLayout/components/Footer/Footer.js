@@ -12,6 +12,7 @@ import BrandLogo from "./static/image/brandLogo.png";
 import Marker from "./static/image/marker.png";
 import RightArrow from "./static/image/right-arrow.svg";
 
+
 const usefulLinks = [
   "Group Profiles",
   "Vision & Values",
